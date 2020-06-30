@@ -18,5 +18,5 @@ while (true) {
 
   total += input;
 }
-let message = "Общая сума чисел равна ${total}";
+let message = `Общая сума чисел равна ${total}`;
 alert(message);

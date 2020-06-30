@@ -14,6 +14,6 @@ if (totalPrice >= credits) {
 } else {
   credits = totalPrice - credits;
   console.log(
-    "Вы купили ${orderDroids} дроид(ов), на счету осталось ${credits} кредитов."
+    `Вы купили ${orderDroids} дроид(ов), на счету осталось ${credits} кредитов.`
   );
 }

@@ -2,34 +2,29 @@ let price = 0;
 let country = prompt("Введите Вашу страну");
 let normalizedCountry = country.toLowerCase();
 
-switch (country) {
-  case 1:
-    result = Китай;
+switch (normalizedCountry) {
+  case "китай":
     price = 100;
     break;
 
-  case 2:
-    result = Чили;
+  case "чили":
     price = 250;
     break;
 
-  case 3:
-    result = Австралия;
+  case "австралия":
     price = 170;
     break;
 
-  case 4:
-    result = Индия;
+  case "индия":
     price = 80;
     break;
 
-  case 5:
-    result = Ямайка;
+  case "ямайка":
     price = 120;
     break;
 
   default:
-    alert("В вашей стране доставка недоступна");
+    let message = `В вашей стране доставка не доступна`;
+    alert(message);
 }
-let message = "Доставка в ${normalizedCountry} будет стоить ${price} кредитов";
-console.log(message);
+console.log(`Доставка в ${normalizedCountry} будет стоить ${price} кредитов`);
