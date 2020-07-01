@@ -12,7 +12,7 @@ if (orderDroids === null) {
 if (totalPrice >= credits) {
   console.log("Недостаточно средств на счету!");
 } else {
-  credits = totalPrice - credits;
+  credits -= totalPrice;
   console.log(
     `Вы купили ${orderDroids} дроид(ов), на счету осталось ${credits} кредитов.`
   );

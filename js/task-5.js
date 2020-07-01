@@ -1,6 +1,6 @@
 let price = 0;
-let country = prompt("Введите Вашу страну");
-let normalizedCountry = country.toLowerCase();
+const country = prompt("Введите Вашу страну");
+const normalizedCountry = country.toLowerCase();
 
 switch (normalizedCountry) {
   case "китай":
@@ -24,7 +24,7 @@ switch (normalizedCountry) {
     break;
 
   default:
-    let message = `В вашей стране доставка не доступна`;
+    const message = "В вашей стране доставка не доступна";
     alert(message);
 }
 console.log(`Доставка в ${normalizedCountry} будет стоить ${price} кредитов`);
